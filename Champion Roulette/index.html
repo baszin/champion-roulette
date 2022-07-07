@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Champion Roulette</title>
+            <link rel="stylesheet" href="style.css">
+            <script defer src="./src/generate.js"></script>
+            <script defer src="./src/options.js"></script>
+    </head>
+    <body>
+        <h1>Champion Roulette</h1>
+        <p>
+            <label for="role">Select Role</label>
+            <select name="role" id="role" class="role">
+                <option value="null"></option>
+                <option value="all">ALL ROLES</option>
+                <option value="top">TOP</option>
+                <option value="jngl">JUNGLE</option>
+                <option value="mid">MID</option>
+                <option value="adc">ADC</option>
+                <option value="sup">SUPPORT</option>
+            </select>
+        </p>
+        <button onclick="generate()">Generate</button>
+        <button onclick="options()">Options</button>
+        <h2 id="generated"></h2>
+    </body>
+    <footer>
+        <h6>Made by <a href="https://twitter.com/maybebas_" target="_blank">maybebas_</a></h6>
+    </footer>
+</html>
